@@ -12,6 +12,10 @@
       display: flex;
       height: 100vh;
     }
+    .bold-text {
+  font-weight: bold;
+}
+
     .left, .right {
       padding: 15px;
       overflow-y: auto;
@@ -119,22 +123,22 @@ button:hover {
 }
 
 
-    #montant { top: 110px; left: 590px; font-size: 16px; }
-    #montantBis { top: 175px; left: 590px; font-size: 16px; }
-    #montantLettre { top: 215px; left: 250px; font-size: 14px; width: 600px; }
-    #echeance { top: 70px; left: 210px; font-size: 14px; }
-    #echeanceBis { top: 260px; left: 240px; font-size: 14px; }
-    #lieu { top: 55px; left: 350px; font-size: 14px; }
-    #date { top: 75px; left: 350px; font-size: 14px; }
-    #nomTire { top: 340px; left: 320px; font-size: 14px; }
-    #adresseTire { top: 370px; left: 320px; font-size: 13px; width: 400px; }
-    #rib { top: 310px; left: 20px; font-size: 13px; }
-    #ribBis { top: 120px; left: 220px; font-size: 13px; }
-    #tireur { top: 185px; left: 40px; font-size: 14px; }
-    #cedant { top: 260px; left: 380px; font-size: 14px; }
-    #domiciliation { top: 310px; left: 510px; font-size: 13px; }
-    #valeur { top: 285px; left: 370px; font-size: 14px; }
-    #protest { top: 380px; left: 60px; font-size: 14px; }
+    #montant { top: 110px; left: 590px; font-size: 16px; font-weight: bold; }
+    #montantBis { top: 175px; left: 590px; font-size: 16px; font-weight: bold;}
+    #montantLettre { top: 215px; left: 250px; font-size: 14px; width: 600px;font-weight: bold; }
+    #echeance { top: 70px; left: 210px; font-size: 14px; font-weight: bold;}
+    #echeanceBis { top: 260px; left: 240px; font-size: 14px;font-weight: bold; }
+    #lieu { top: 55px; left: 350px; font-size: 14px; font-weight: bold;}
+    #date { top: 75px; left: 350px; font-size: 14px; font-weight: bold;}
+    #nomTire { top: 340px; left: 320px; font-size: 14px; font-weight: bold;}
+    #adresseTire { top: 370px; left: 320px; font-size: 13px; width: 400px;font-weight: bold; }
+    #rib { top: 310px; left: 20px; font-size: 13px;font-weight: bold; }
+    #ribBis { top: 120px; left: 220px; font-size: 13px; font-weight: bold;}
+    #tireur { top: 185px; left: 40px; font-size: 14px;font-weight: bold; }
+    #cedant { top: 260px; left: 380px; font-size: 14px; font-weight: bold;}
+    #domiciliation { top: 310px; left: 510px; font-size: 13px; font-weight: bold;}
+    #valeur { top: 285px; left: 370px; font-size: 14px;font-weight: bold; }
+    #protest { top: 380px; left: 60px; font-size: 14px; font-weight: bold;}
 
     label {
       display: block;
@@ -190,11 +194,48 @@ button:hover {
   <input id="inputCedant" type="text" />
 
   <label>Domiciliation : التوطين</label>
-  <input id="inputDomiciliation" type="text" />
-
+  <select id="inputDomiciliation">
+ <option>Selectionner Banque----</option>
+ <option>AB Amen Banque</option>
+    <option>BT Banque Tunisien</option>
+    <option>STB Société Tunisienne de Banque </option>
+    <option>BNA Banque Nationale Agricole </option>
+    <option>BH Banque de l’Habitat</option>
+    <option>BTS Banque Tunisienne de Solidarité</option>
+    <option>BTE Banque de Tunisie et des Emirats</option>
+    <option>BTL Banque Tuniso-Libyenne</option>
+    <option>TSB Tunisian Saudi Bank </option>
+    <option>BAB Al Baraka Bank</option>
+    <option>BW Al Wifak International Bank</option>
+    <option>BTIJ Attijari Bank</option>
+    <option>ATB Arab Tunisian Bank  </option>
+    <option>ABC Arab Banking Corporation</option>
+    <option>BIAT Banque Internationale Arabe de Tunisie </option>
+    <option>BTK Banque Tuniso Koweitienne </option>
+    <option>QNB Qatar National Bank- Tunis</option>
+    <option>UBCI Union Bancaire de Commerce et d’Industrie</option>
+    <option>UIB Union Internationale de Banque </option>  <option>Selectionner Banque----</option>
+ <option>AB Amen Banque</option>
+    <option>BT Banque Tunisien</option>
+    <option>STB Société Tunisienne de Banque </option>
+    <option>BNA Banque Nationale Agricole </option>
+    <option>BH Banque de l’Habitat</option>
+    <option>BTS Banque Tunisienne de Solidarité</option>
+    <option>BTE Banque de Tunisie et des Emirats</option>
+    <option>BTL Banque Tuniso-Libyenne</option>
+    <option>TSB Tunisian Saudi Bank </option>
+    <option>BAB Al Baraka Bank</option>
+    <option>BW Al Wifak International Bank</option>
+    <option>BTIJ Attijari Bank</option>
+    <option>ATB Arab Tunisian Bank  </option>
+    <option>ABC Arab Banking Corporation</option>
+    <option>BIAT Banque Internationale Arabe de Tunisie </option>
+    <option>BTK Banque Tuniso Koweitienne </option>
+    <option>QNB Qatar National Bank- Tunis</option>
+    <option>UBCI Union Bancaire de Commerce et d’Industrie</option>
+    <option>UIB Union Internationale de Banque </option></select>
   <label>Valeur en :</label>
-  <input id="inputValeur" type="text" />
-
+  <input id="inputValeur" type="text"  />
   <label>Acceptation : القبول</label>
   <select id="inputProtest">
     <option>Oui</option>
@@ -405,32 +446,52 @@ inputIds.forEach(id => {
 window.addEventListener('DOMContentLoaded', afficherTraite);
 
 
+
   async function downloadTraiteOnly() {
-  const { jsPDF } = window.jspdf;
-  const montantTotal = parseFloat(document.getElementById("inputMontant").value.replace(',', '.')) || 0;
-  const nombreParties = parseInt(document.getElementById("inputNombreParties").value) || 1;
-  const montantParPartie = (montantTotal / nombreParties).toFixed(3); 
+    // Remplir les champs d'abord
+    if (typeof remplirChamps === 'function') {
+      remplirChamps();
+    }
 
-  for (let i = 1; i <= nombreParties; i++) {
-    
-    document.getElementById("inputMontant").value = montantParPartie;
-    // document.getElementById("inputMontantLettre").value += ` - Traite N°${i}/${nombreParties}`;
-    remplirChamps();
+    const traiteContainer = document.getElementById("traite");
 
-    await new Promise(resolve => setTimeout(resolve, 300));
-    
-    const canvas = await html2canvas(document.getElementById("traite"), { scale: 2 });
+    if (!traiteContainer) {
+      alert("Élément 'traite' introuvable.");
+      return;
+    }
+
+    // Trouver l'image de fond
+    const backgroundImage = traiteContainer.querySelector("img");
+
+    // Masquer l'image de fond si elle existe
+    if (backgroundImage) {
+      backgroundImage.style.display = "none";
+    }
+
+    // Utiliser html2canvas pour capturer la section sans image
+    const canvas = await html2canvas(traiteContainer, {
+      backgroundColor: "#ffffff", // Fond blanc
+      scale: 2
+    });
+
+    // Réafficher l'image
+    if (backgroundImage) {
+      backgroundImage.style.display = "block";
+    }
+
+    // Créer un PDF avec jspdf
+    const { jsPDF } = window.jspdf;
+    const pdf = new jsPDF({
+      orientation: "landscape",
+      unit: "px",
+      format: [canvas.width, canvas.height]
+    });
+
     const imgData = canvas.toDataURL("image/png");
-    const pdfWidth = 175; 
-    const pdfHeight = 115;
-    const pdf = new jsPDF("l", "mm", [pdfWidth, pdfHeight]);
-    pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
-    pdf.save(`traite-${i}.pdf`);
+    pdf.addImage(imgData, "PNG", 0, 0, canvas.width, canvas.height);
+    pdf.save("traite.pdf");
   }
 
- 
-  document.getElementById("inputMontant").value = montantTotal;
-}
 
 </script>
 
